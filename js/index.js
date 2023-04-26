@@ -26,7 +26,7 @@ const app = {
     loadMarkers() {
 
         // fetch de data van opendata.brussels.be
-        fetch('https://opendata.brussels.be/api/v2/catalog/datasets/haltes-mivb/records?limit=10&offset=0&timezone=UTC')
+        fetch('https://opendata.brussels.be/api/v2/catalog/datasets/haltes-mivb/records?limit=100&offset=0&timezone=UTC')
         .then(function (response) {
           return response.json();
         })
